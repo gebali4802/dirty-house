@@ -10,4 +10,5 @@ util.warning("이 게임은 게임 저장이 없으며, 이 게임은 윈도우 
 util.info("이 게임은 머드 게임으로 고전 게임처럼 만들었습니다.")
 while result == None:
     result = util.gameInput(["게임 시작", "게임 종료", "정보"])
-util.info("정상")
+
+# 여기부터 코드
