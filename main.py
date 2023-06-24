@@ -1,1 +1,3 @@
-import color.py
+import color
+
+print("")
