@@ -18,7 +18,6 @@ def gameExit(msg):
     exit()
 
 def gameInput(option):
-    info("선택지가 나타났습니다!")
     print()
     local = 1
     while local <= len(option):
