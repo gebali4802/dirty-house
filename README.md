@@ -6,4 +6,5 @@
 * 형식 : 머드 게임
 * 파일 :
     - main.py
-    - color.py
+    - README.md
+    - util.py
