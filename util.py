@@ -14,7 +14,8 @@ def warning(msg, type="game"):
         print(f"\033[91m[ 경고 ]  : {msg}\033[90m")
 
 def clear():
-
+    for i in ["clear", "cls"]:
+        os.system(i)
 
 def gameExit(msg):
     warning(f"게임에 충돌이 나 게임을 강제로 종료합니다!\n이유: {msg}", "system")
