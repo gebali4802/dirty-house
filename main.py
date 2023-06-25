@@ -16,7 +16,7 @@ while result == None:
 
 def gamePlay():
     util.info("이 게임의 주인공인 당신은 어느 때와 다름없이 침대에서 일어납니다.\n하지만 오늘은 무언가 다릅니다.")
-    util.info("오늘은 드디어 당신이 대학교에 가는 날입니다.")
+    util.info("오늘은 드디어 당신이 대학교에 가는 날입니다. 당신은 대학교에 가까운 작은 원룸 월세집을 구했습니다.")
 
 if int(result) == 1:
     util.clear()
