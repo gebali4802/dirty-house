@@ -42,13 +42,22 @@ class System():
             util.info("하지만 당신은 가지 않은것을 후회하지도 원망하지도 않았습니다. 아직까지는요..")
             self.stress -= 5
 
-            printTotal()
             util.alart("이렇게 하루가 흘러갔습니다.")
 
-system = System(100)
+system = System(100, 10, 10, 10, 0)
+
+def printTotal():
+    util.alart("오늘 하루의 일과입니다.")
+    util.info(f"돈 : {system.money}만원")
+    util.info(f"스트레스 : {system.stress}")
+    util.info(f"더러움 : {system.dirty}")
+    util.info(f"인기도 : {system.popularity}")
+    util.info(f"아르바이트 : {system.arbeit}개")
+    util.gameInput(["다음 날"])
 
 def gamePlay():
-    pass
+    system.firstDay()
+    printTotal()
 
 if int(result) == 1:
     util.clear()
@@ -63,5 +72,5 @@ elif int(result) == 3:
     util.alart("이 게임은 2023 전국 청소년 GAME 코딩대회 출품작입니다. 이 게임은 파이썬으로 작성되었으며, 세이브 파일 저장을 위해 SQLite3모듈을 사용하였습니다. 그 외에는 기본 내장 라이브러리와 직접 만든 내부 라이브러리를 사용하였으며, 윈도우 환경에서 원활하게 돌아갑니다. 타 환경에서는 작동은 합니다만, 사실상 윈도우 전용입니다. 이 게임을 만들때 아이디어는 4년전 망상으로만 구상했던 게임의 아이디어를 실제로 만든 것이라 더 애착이 갑니다. 게임은 게임이라고 할것도 없이 보잘것 없을정도로 심심하나 열심히 만들었습니다.")
     result = None
     while result == None:
-        result = util.gameInput(["나가기"])
+        util.gameInput(["나가기"])
         exit()
