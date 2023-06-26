@@ -49,11 +49,11 @@ system = System(100, 10, 10, 10, 0)
 def printTotal():
     util.alart("오늘 하루의 일과입니다.")
     print()
-    print(f"\033[94m[ 정보 ] : 돈 : {system.money}\033[90m")
-    print(f"\033[94m[ 정보 ] : 스트레스 : {system.stress}\033[90m")
-    print(f"\033[94m[ 정보 ] : 더러움 : {system.dirty}\033[90m")
-    print(f"\033[94m[ 정보 ] : 인기도 : {system.popularity}\033[90m")
-    print(f"\033[94m[ 정보 ] : 아르바이트 : {system.arbeit}개\033[90m")
+    print(f"\033[96m[ 정보 ] : 돈 : {system.money}\033[90m")
+    print(f"\033[96m[ 정보 ] : 스트레스 : {system.stress}\033[90m")
+    print(f"\033[96m[ 정보 ] : 더러움 : {system.dirty}\033[90m")
+    print(f"\033[96m[ 정보 ] : 인기도 : {system.popularity}\033[90m")
+    print(f"\033[96m[ 정보 ] : 아르바이트 : {system.arbeit}개\033[90m")
     util.gameInput(["다음 날"])
 
 def gamePlay():
