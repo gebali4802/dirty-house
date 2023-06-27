@@ -1,7 +1,5 @@
-#-*-coding: utf-8-*-
-
-import time
 import os
+import time
 
 def info(msg):
     print()
@@ -11,21 +9,13 @@ def alart(msg, type="game"):
     if type == "game":
         print()
         print(f"\033[93m[ 알림 ] : {msg}\033[90m")
-    elif "system":
+    else:
         print()
         print(f"\033[91m[ 경고 ]  : {msg}\033[90m")
-
-def stop(sec):
-    time.sleep(sec)
 
 def clear():
     for i in ["clear", "cls"]:
         os.system(i)
-
-def gameExit(msg):
-    alart(f"게임에 충돌이 나 게임을 강제로 종료합니다!\n이유: {msg}", "system")
-    time.sleep(3)
-    exit()
 
 def gameInput(option, result=None):
     while result == None:
