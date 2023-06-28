@@ -30,19 +30,20 @@ class Game():
         result = util.gameInput(["본다", "만다"])
 
         if int(result) == 1:
-            util.info("당신은 폰을 쳐다보기 시작합니다.")
-            time.sleep(random.randint(3, 15))
+            for i in range(random.randint(1, 3))
+                util.info("당신은 폰을 쳐다보기 시작합니다.")
+                time.sleep(random.randint(3, 15))
 
-            clock = [time.time(), 0]
-            util.alart("교수님이 당신 옆을 지나갑니다. 당신의 이름을 알고 있는 듯 하군요.")
-            util.gameInput(["끈다"])
-            clock[1] = time.time()
+                clock = [time.time(), 0]
+                util.alart("교수님이 당신 옆을 지나갑니다. 당신의 이름을 알고 있는 듯 하군요.")
+                util.gameInput(["끈다"])
+                clock[1] = time.time()
 
-            if clock[1] - clock[2] > 3:
-                util.info("당신은 교수님에게 들켰습니다. 당신은 모두가 보는 앞에서 혼났고, 당신의 인기도는 \033[91m10감소\033[94m했습니다.")
-                uitl.alart("TIP. 3초 이내에 폰을 끄세요.")
-            else:
-                util.info("당신은 다행이 빨리 폰을 끈 결과, 교수님에게 들킬 뻔 했습니다.")
+                if clock[1] - clock[2] > 3:
+                    util.info("당신은 교수님에게 들켰습니다. 당신은 모두가 보는 앞에서 혼났고, 당신의 인기도는 \033[91m10감소\033[94m했습니다.")
+                    uitl.alart("TIP. 3초 이내에 폰을 끄세요.")
+                else:
+                    util.info("당신은 다행이 빨리 폰을 끈 결과, 교수님에게 들킬 뻔 했습니다.")
         else:
             util.info("당신은 절제하는 마음으로 열심히 교수님의 강의를 듣기 시작했습니다..")
 
